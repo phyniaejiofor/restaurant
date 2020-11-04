@@ -787,10 +787,10 @@
                   <span>Founder and CEO</span>
                 </div>
                 <div class="social">
-                  <a href=""><i class="icofont-twitter"></i></a>
-                  <a href=""><i class="icofont-facebook"></i></a>
-                  <a href=""><i class="icofont-instagram"></i></a>
-                  <a href=""><i class="icofont-linkedin"></i></a>
+                  <a href="https://twitter.com/phynia4"><i class="icofont-twitter"></i></a>
+                  <a href="https://www.facebook.com/ejiofor.chiamaka.1"><i class="icofont-facebook"></i></a>
+                  <a href="https://www.instagram.com/amakanwam"><i class="icofont-instagram"></i></a>
+                  <a href="https://www.linkedin.com/in/chiamaka-ejiofor"><i class="icofont-linkedin"></i></a>
                 </div>
               </div>
             </div>
@@ -805,10 +805,11 @@
                   <spa>Master  Chef</spa></span>
                 </div>
                 <div class="social">
-                  <a href="https://twitter.com/phynia4"><i class="icofont-twitter"></i></a>
-                  <a href=" www.facebook.com/ejiofor.chiamaka1"><i class="icofont-facebook"></i></a>
-                  <a href=""><i class="icofont-instagram"></i></a>
-                  <a href=""><i class="icofont-linkedin"></i></a>
+                  <a href="https://twitter.com/phynia4"><i class="icofont-twitter" target></i></a>
+                  <a href="https://www.facebook.com/ejiofor.chiamaka.1"><i class="icofont-facebook"></i></a>
+                  <a href="https://www.instagram.com/amakanwam"><i class="icofont-instagram"></i></a>
+                  <a href="https://www.linkedin.com/in/chiamaka-ejiofor"><i class="icofont-linkedin"></i></a>
+                  
                 </div>
               </div>
             </div>
@@ -823,10 +824,10 @@
                   <span>Chief Supervisor</span>
                 </div>
                 <div class="social">
-                  <a href="http://twitter.com/@AkachukwuNnorom" target="blank"><i class="icofont-twitter"></i></a>
-                  <a href="https://web.facebook.com/akachukwu.precious.988/" target="blank"><i class="icofont-facebook"></i></a>
-                  <a href="https://www.instagram.com/p/CHC-yxMp62s/?igshid=j8eun7vdsvqr" target="blank"><i class="icofont-instagram"></i></a>
-                  <a href="https://www.linkedin.com/in/nnorom-precious-akachukwu-1284131a5" target="blank"><i class="icofont-linkedin"></i></a>
+                  <a href=""><i class="icofont-twitter"></i></a>
+                  <a href=""><i class="icofont-facebook"></i></a>
+                  <a href=""><i class="icofont-instagram"></i></a>
+                  <a href=""><i class="icofont-linkedin"></i></a>
                 </div>
               </div>
             </div>
@@ -843,9 +844,9 @@
                 </div>
                 <div class="social">
                   <a href="https://www.twitter.com/rexsteroxxy"><i class="icofont-twitter"></i></a>
-                  <a href=""><i class="icofont-facebook"></i></a>
+                  <a href="https://www.facebook.com/amadi.austin.77"><i class="icofont-facebook"></i></a>
                   <a href=""><i class="icofont-instagram"></i></a>
-                  <a href=""><i class="icofont-linkedin"></i></a>
+                  <a href="https://www.linkedin.com/in/amadiaustinchukwuemeka"><i class="icofont-linkedin"></i></a>
                 </div>
               </div>
             </div>
@@ -860,7 +861,7 @@
                   <span>Social Media Marketer</span>
                 </div>
                 <div class="social">
-                  <a href=""><i class="icofont-twitter"></i></a>
+                  <a href="https://twitter.com/Eokpulor"><i class="icofont-twitter"></i></a>
                   <a href=""><i class="icofont-facebook"></i></a>
                   <a href=""><i class="icofont-instagram"></i></a>
                   <a href=""><i class="icofont-linkedin"></i></a>
@@ -871,17 +872,17 @@
 
           <div class="col-lg-4 col-md-4">
             <div class="member" >
-              <img src="assets/img/Akolite2.jpg" class="img-fluid rounded-circle" alt="">
+              <img src="assets/img/Akolite2.jpg " height=600" width="500" class="img-fluid rounded-circle" alt="">
               <div class="member-info">
                 <div class="member-info-content">
                   <h4>Nnorom Precious</h4>
                   <span>Marketer</span>
                 </div>
                 <div class="social">
-                  <a href="http://twitter.com/@AkachukwuNnorom" target="blank"><i class="icofont-twitter"></i></a>
-                  <a href="https://web.facebook.com/akachukwu.precious.988/" target="blank"><i class="icofont-facebook"></i></a>
-                  <a href="https://www.instagram.com/p/CHC-yxMp62s/?igshid=j8eun7vdsvqr" target="blank"><i class="icofont-instagram"></i></a>
-                  <a href="https://www.linkedin.com/in/nnorom-precious-akachukwu-1284131a5"><i class="icofont-linkedin"></i></a>
+                  <a href=""><i class="icofont-twitter"></i></a>
+                  <a href=""><i class="icofont-facebook"></i></a>
+                  <a href=""><i class="icofont-instagram"></i></a>
+                  <a href=""><i class="icofont-linkedin"></i></a>
                 </div>
               </div>
             </div>
