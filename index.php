@@ -795,7 +795,7 @@
                 </div>
                 <div class="social">
                   <a href="https://twitter.com/phynia4"><i class="icofont-twitter"></i></a>
-                  <a href="https://www.facebook.com/ejiofor.chiamaka.1"><i class="icofont-facebook"></i></a>
+                  <a href="https://www.facebook.com/ejioforchiamaka.phynia"><i class="icofont-facebook"></i></a>
                   <a href="https://www.instagram.com/amakanwam"><i class="icofont-instagram"></i></a>
                   <a href="https://www.linkedin.com/in/chiamaka-ejiofor"><i class="icofont-linkedin"></i></a>
                 </div>
