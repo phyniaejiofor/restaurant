@@ -86,7 +86,7 @@
             <a href="#book-a-table" class="btn-book animated fadeInUp scrollto">Book a Table</a>
           </div>
         </div>
-        <div class="col-lg-4 d-flex align-items-center justify-content-center" data-aos="zoom-in" data-aos-delay="200">
+        <div class="col-lg-4 d-flex align-items-center justify-content-center" data-aos="zoom-in" data-aos-delay="10">
           <a href="https://youtu.be/vnm-iWTRJ9A" class="venobox play-btn" data-vbtype="video" data-autoplay="true"></a>
         </div>
 
@@ -101,7 +101,7 @@
       <div class="container" data-aos="fade-up">
 
         <div class="row">
-          <div class="col-lg-6 order-1 order-lg-2" data-aos="zoom-in" data-aos-delay="100">
+          <div class="col-lg-6 order-1 order-lg-2" data-aos="zoom-in" data-aos-delay="10">
             <div class="about-img">
               <img src="assets/img/Imgs/having_fun.svg" alt="">
             </div>
