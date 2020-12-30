@@ -75,7 +75,7 @@
 
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex align-items-center">
-    <div class="container position-relative text-center text-lg-left" data-aos="zoom-in" data-aos-delay="100">
+    <div class="container position-relative text-center text-lg-left" data-aos="zoom-in" >
       <div class="row">
         <div class="col-lg-8">
           <h1>Welcome to <span>Phynia's Tasty Bites</span></h1>
