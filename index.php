@@ -468,7 +468,7 @@
 
           <div class="row event-item">
             <div class="col-lg-6">
-              <img src="assets/img/Imgs/outdoor_party.svg" class="img-fluid" alt="">
+              <img src="assets/img/birthday.jpg" class="img-fluid" alt="">
             </div>
             <div class="col-lg-6 pt-4 pt-lg-0 content">
               <h3>Birthday Parties</h3>
@@ -492,7 +492,7 @@
 
           <div class="row event-item">
             <div class="col-lg-6">
-              <img src="./assets/img/birthday.jpg" class="img-fluid" alt="">
+              <img src="assets/img/Imgs/special_event.svg" class="img-fluid" alt="">
             </div>
             <div class="col-lg-6 pt-4 pt-lg-0 content">
               <h3>Private Parties</h3>
