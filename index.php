@@ -87,7 +87,11 @@
           </div>
         </div>
         <div class="col-lg-4 d-flex align-items-center justify-content-center" data-aos="zoom-in" data-aos-delay="10">
-          <a href="https://youtu.be/vnm-iWTRJ9A" class="venobox play-btn" data-vbtype="video" data-autoplay="true"></a>
+          <!-- <a href="" class="venobox play-btn" data-vbtype="video" data-autoplay="true"></a> -->
+          <video width="320" height="240" class="venobox play-btn" data-autoplay="true">
+            <source src="./assets/img/crown.mp4" >
+            
+          </video>
         </div>
 
       </div>
