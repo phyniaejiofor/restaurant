@@ -88,8 +88,9 @@
         </div>
         <div class="col-lg-4 d-flex align-items-center justify-content-center" data-aos="zoom-in" data-aos-delay="10">
           <!-- <a href="" class="venobox play-btn" data-vbtype="video" data-autoplay="true"></a> -->
-          <video width="320" height="240" class="venobox play-btn" data-autoplay="true">
-            <source src="./assets/img/crown.mp4" >
+          <video class="tab" controls   width="150" height="150" >Your browser does not support the &lt;video&gt; tag.
+            <source src="./assets/img/amy.mp4" >
+          </video>
             
           </video>
         </div>
@@ -491,7 +492,7 @@
 
           <div class="row event-item">
             <div class="col-lg-6">
-              <img src="assets/img/Imgs/special_event.svg" class="img-fluid" alt="">
+              <img src="./assets/img/birthday.jpg" class="img-fluid" alt="">
             </div>
             <div class="col-lg-6 pt-4 pt-lg-0 content">
               <h3>Private Parties</h3>
