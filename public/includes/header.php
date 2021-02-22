@@ -25,9 +25,9 @@
   <link rel="setting" href="setting.json">
   
       <!-- favicon ico -->
-      <link rel="short icon" href="favicon.ico" type="image/x-icon"
+      <link rel="short icon" href="favicon.ico" type="image/x-icon">
 
-  <!-- Vendor CSS Files -->
+    <!-- Vendor CSS Files  -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
@@ -37,7 +37,8 @@
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
+  
+ <link rel="stylesheet" href="../assets/css/style.css">
 
 
 </head>
@@ -64,7 +65,7 @@
 
       <nav class="nav-menu d-none d-lg-block">
         <ul>
-          <li class="active"><a href="index.html">Home</a></li>
+          <li class="active"><a href="index.php">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#menu">Menu</a></li>
           <li><a href="#specials">Specials</a></li>

@@ -39,7 +39,7 @@
           <p>Book a Table</p>
         </div>
 
-        <form action="./bookTable.php" method="POST"   
+        <form action="./bookTable.php" method="POST"   class="php-email-form"
           >
           <div class="form-row">
             <div class="col-lg-4 col-md-6 form-group">
