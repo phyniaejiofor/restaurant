@@ -1,0 +1,12 @@
+{
+    // "liveServer.settings.port": 5501
+    "name" : "Phynia's TBites",
+    "short_name" : "Phynia's Bites",
+    "start_url": "/?home=true",
+    "icons":[],
+    "theme_color": "#cda45e",
+    "background_color": "white",
+    "display": "fullscreen",
+    "orientation": "portrait"
+
+}
