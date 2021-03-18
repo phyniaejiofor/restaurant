@@ -98,11 +98,11 @@
   // * For new records, provide only the menu_name.
   // * For existing records, provide current ID as second arugment
   //   has_unique_page_menu_name('History', 4)
-  function has_unique_name($matnumber, $current_id="0") {
+  function has_unique_name($email, $current_id="0") {
     global $db;
 
-    $sql = "SELECT * FROM student ";
-    $sql .= "WHERE matnumber='" . db_escape($db, $matnumber) . "' ";
+    $sql = "SELECT * FROM sign_up ";
+    $sql .= "WHERE email='" . db_escape($db, $email) . "' ";
     $sql .= "AND id != '" . db_escape($db, $current_id) . "'";
 
     $result = mysqli_query($db, $sql);
