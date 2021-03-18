@@ -22,7 +22,7 @@ function find_all_contacts() {
     return $result;
 }
 
-function find_contact_by_id($id) {
+function find_a_contact($id) {
     global $db; 
 
     $sql = "SELECT * FROM contact ";
@@ -50,28 +50,28 @@ function  find_a_booked_table($id){
       return $data;
 }
 
-function update_contact($contact) {
-    global $db;
+// function update_contact($contact) {
+//     global $db;
 
-    $sql = "UPDATE contact SET ";
-        $sql .= "menu_name='" . $contact['name'] . "', ";
-        $sql .= "position='" . $contact['email'] . "', ";
-        $sql .= "position='" . $contact['subject'] . "', ";
-        $sql .= "visible='" . $contact['message'] . "' ";
-        $sql .= "WHERE id='" . $contact['id'] . "' ";
-        $sql .= "LIMIT 1";
+//     $sql = "UPDATE contact SET ";
+//         $sql .= "menu_name='" . $contact['name'] . "', ";
+//         $sql .= "position='" . $contact['email'] . "', ";
+//         $sql .= "position='" . $contact['subject'] . "', ";
+//         $sql .= "visible='" . $contact['message'] . "' ";
+//         $sql .= "WHERE id='" . $contact['id'] . "' ";
+//         $sql .= "LIMIT 1";
 
-        $result = mysqli_query($db, $sql);
-        // For UPDATE statements, $result is true/false
-            if($result) {
-                return true;
-            } else {
-                // UPDATE failed
-                echo mysqli_error($db);
-                db_diconnect($db);
-                exit;
-            }
-}
+//         $result = mysqli_query($db, $sql);
+//         // For UPDATE statements, $result is true/false
+//             if($result) {
+//                 return true;
+//             } else {
+//                 // UPDATE failed
+//                 echo mysqli_error($db);
+//                 db_diconnect($db);
+//                 exit;
+//             }
+// }
 
 function validate_admin($admin) {
     $errors = [];

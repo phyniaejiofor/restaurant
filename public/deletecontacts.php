@@ -34,7 +34,7 @@ if(is_post_request()){
 else{
 // read the content of the database and prefill the form with the details
 
-$contact = find_contact_by_id($id);
+$contact = find_a_contact($id);
 
 }
 

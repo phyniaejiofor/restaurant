@@ -39,7 +39,7 @@
                     <td><?php echo $contact['email']; ?></td>
                     <td><?php echo $contact['subject']; ?></td>    
                     <td><?php echo $contact['message']; ?></td>  
-                    <!-- <td><a class="btn-primary" href="<?php //echo './updatecontacts.php?id=' . $contact['id']?>">CLICK TO EDIT</a></td>  -->
+                    <td><a class="btn-primary" href="<?php echo './updatecontacts.php?id=' . $contact['id']?>">CLICK TO EDIT</a></td> 
                     <td><a class="btn-primary" href="<?php echo './deletecontacts.php?id=' . $contact['id']?>">DELETE CONTACT</a></td>
            
                 </tr>
