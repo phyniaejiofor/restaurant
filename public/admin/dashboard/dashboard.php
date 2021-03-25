@@ -1,3 +1,11 @@
+<?php
+require_once('../../../private/initialize.php');
+require_login();
+
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -34,7 +42,7 @@
         </div>
         <div class="navbar-menu-wrapper d-flex align-items-center">
           <ul class="navbar-nav">
-            <li class="nav-item font-weight-semibold d-none d-lg-block">Help : +234 8107430985</li>
+            <li class="nav-item font-weight-semibold d-none d-lg-block"><?php echo $_SESSION['name']."  is online"?></li>
             <li class="nav-item dropdown language-dropdown">
               <a class="nav-link dropdown-toggle px-2 d-flex align-items-center" id="LanguageDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
                 <div class="d-inline-flex mr-0 mr-md-3">
@@ -158,7 +166,7 @@
                 <a class="dropdown-item">Events<i class="dropdown-item-icon ti-location-arrow"></i></a>
                 <a class="dropdown-item">Message<i class="dropdown-item-icon ti-help-alt"></i></a>
                 <a class="dropdown-item">Book A Table<i class="dropdown-item-icon ti-power-off"></i></a>
-                <a class="dropdown-item">Contacts<i class="dropdown-item-icon ti-power-off"></i></a>
+                <a href="../logout.php" class="dropdown-item">Logout<i class="dropdown-item-icon ti-power-off"></i></a>
               </div>
             </li>
           </ul>

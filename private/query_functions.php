@@ -12,6 +12,23 @@ function find_all_bookedtables() {
 }
 
 
+function find_admin_by_email($email){
+  global $db;
+  
+  $sql = "SELECT * FROM sign_up ";
+  $sql .= "WHERE email='". db_escape($db, $email)."'";
+  $sql .= "LIMIT 1";
+  $result = mysqli_query($db, $sql);
+  confirm_result_set($result);
+  $admin=mysqli_fetch_assoc($result);
+    mysqli_free_result($result);
+    return $admin;
+}
+
+
+
+
+
 function find_all_contacts() {
     global $db;
 

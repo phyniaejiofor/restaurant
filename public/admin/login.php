@@ -1,3 +1,48 @@
+<?php
+
+require_once('../../private/initialize.php');
+
+$email = '';
+
+if(is_post_request()) {
+
+  $email = $_POST['email'] ?? '';
+  $password = $_POST['password'] ?? '';
+
+  // Validations
+  if(is_blank($email)) {
+    $errors[] = "Email cannot be blank.";
+  }
+  if(is_blank($password)) {
+    $errors[] = "Password cannot be blank.";
+  }
+  if(empty($errors)){
+    $admin = find_admin_by_email($email);
+      if($admin){
+          if(password_verify($password , $admin['password'])){
+              log_in_admin($admin);
+              redirect_to("dashboard/dashboard.php");
+          }else{
+            //email found but password does not match
+            $errors[] = "log in not successful";
+            
+          }
+      }
+      else{
+        //no email was found
+         $errors[] = "log in not successful";
+            
+      }
+  }
+
+}
+
+
+
+?>
+
+
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -63,21 +108,14 @@
    <header>LogIn To TastyBites</header>
 
    <div class="inputField">
-   <form action="" method="" >
-    <label for="uname"><b>Username or email address</b>
-    <input type="text" placeholder="Enter Username" name="uname" required></label><br>
+  <form action="login.php" method="POST" >
+    <input type="text" placeholder="Enter email" name="email" required></label><br>
 
-    <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required> <br>
+    <input type="password" placeholder="Enter Password" name="password" required> <br>
 
     <button type="submit">Login</button>
 
-    <label>
-      <input type="checkbox" checked="checked" name="remember"> Remember me
-    </label><br>
-
-    <span class="psw">Forgot <a href="#">password?</a></span> <br>
-    <button type="submit" class="submit">Create an account</button><br>
+    
   </div>
   </div>
 </form>
