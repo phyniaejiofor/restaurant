@@ -1,3 +1,69 @@
+<?php
+require_once("../private/initialize.php");
+// check if request is a post request
+ if (is_post_request()) {
+  
+
+  // collect form inputs
+
+  $contact['name'] = h(contact_input($_POST['name']));
+  $contact['email'] = h(contact_input($_POST['email']));
+  $contact['subject'] = h(contact_input($_POST['subject'])) ?? '';
+  $contact['message'] = h(contact_input($_POST['message'])) ?? '';
+  
+
+
+
+  // validate user inputs
+  // $errors = validateBookATableValues($data);
+  $contactError = validate_contact($contact);
+  
+
+
+  if(empty($contactError)) {
+  // submit data to database
+  $sql = "INSERT INTO contact ";
+	$sql .= "(name,email,subject,message)";
+	$sql .= "VALUES (";
+	$sql .= "'" . db_escape($db, $contact['name']). "',";
+	$sql .= "'" . db_escape($db, $contact['email']). "',";
+    $sql .= "'" . db_escape($db, $contact['subject']). "',";
+    $sql .= "'" . db_escape($db, $contact['message']). "'";
+	$sql .= ")";
+
+	$result = mysqli_query($db, $sql);
+	confirm_result_set($result);
+
+	if($result){
+        // redirect back to home
+        redirect_to('index.php');
+    }else{
+		db_disconnect($db);
+		exit;
+    }
+
+ 
+
+ 
+   }//else(!empty($contactError)) {
+  //   redirect_to('index.php');
+  // }
+
+  
+
+  
+  
+}else{
+  $contactError = [];
+ }
+
+ 
+?>
+
+
+
+
+
 <!-- ======= Contact Section ======= -->
 <section id="contact" class="contact">
       <div class="container" data-aos="fade-up">
@@ -55,33 +121,33 @@
 
           <div class="col-lg-8 mt-5 mt-lg-0">
 
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <form action="contact.php" method="POST"  class="php-email-form">
               <div class="form-row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
-                    data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                  <div class="validate"></div>
+                    data-rule="minlen:4" data-msg="Please enter at least 4 chars" required />
+                  <div class="valimessage"></div>
                 </div>
                 <div class="col-md-6 form-group">
                   <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
-                    data-rule="email" data-msg="Please enter a valid email" />
-                  <div class="validate"></div>
+                    data-rule="email" data-msg="Please enter a valid email" required />
+                  <div class="valimessage"></div>
                 </div>
               </div>
               <div class="form-group">
                 <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject"
-                  data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                <div class="validate"></div>
+                  data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" required />
+                <div class="valimessage"></div>
               </div>
               <div class="form-group">
                 <textarea class="form-control" name="message" rows="8" data-rule="required"
-                  data-msg="Please write something for us" placeholder="Message"></textarea>
-                <div class="validate"></div>
+                  data-msg="Message" placeholder="Message" required ></textarea>
+                <div class="valimessage"></div>
               </div>
               <div class="mb-3">
                 <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
+                <div><?php echo display_err($contactError); ?></div>
+                <!-- <div class="sent-message">Your message has been sent. Thank you!</div> -->
               </div>
               <div class="text-center"><button type="submit">Send Message</button></div>
             </form>
